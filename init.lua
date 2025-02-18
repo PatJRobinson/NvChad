@@ -1,5 +1,9 @@
 require "core"
 
+vim.opt.tabstop = 2      -- Number of spaces a tab counts for
+vim.opt.shiftwidth = 2   -- Number of spaces for auto-indent
+vim.opt.expandtab = true -- Convert tabs to spaces
+
 local custom_init_path = vim.api.nvim_get_runtime_file("lua/custom/init.lua", false)[1]
 
 if custom_init_path then
