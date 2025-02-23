@@ -1,4 +1,13 @@
 local plugins = {
+ {
+    "echasnovski/mini.nvim",
+    branch = "main", -- or the branch you prefer
+    config = function()
+      require('mini.colors').setup({
+        -- optional configuration options here
+      })
+    end,
+  },
   {
     "nvim-neotest/nvim-nio"
   },
